@@ -42,6 +42,14 @@ class ViewController: UIViewController {
         
         countries += ["albania", "armenia", "azerbaijan", "belarus", "belgium", "bosnia and herzegovina", "bulgaria", "croatia", "cyprus", "czech republic", "denmark", "estonia", "finland", "france", "georgia", "germany", "greece", "hungary", "iceland", "ireland", "italy", "kazakhstan", "kyrgyzstan", "latvia", "lithuania", "luxembourg", "malta", "moldova", "monaco", "netherlands", "nigeria", "norway", "poland", "portugal", "romania", "russia", "san marino", "serbia", "slovakia", "slovenia", "spain", "sweden", "switzerland", "turkey", "ukraine", "united kingdom", "usa", "uzbekistan"]
         
+        button1.tag = 0
+        button2.tag = 1
+        button3.tag = 2
+        
+        button1.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
+        button2.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
+        button3.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
+
         button1.layer.borderWidth = 1
         button2.layer.borderWidth = 1
         button3.layer.borderWidth = 1
