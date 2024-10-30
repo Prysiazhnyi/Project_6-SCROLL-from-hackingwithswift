@@ -55,18 +55,46 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="ukraine"/>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qp5-WC-G8W">
+                                                <rect key="frame" x="96" y="400" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgM-xb-HiV">
+                                                <rect key="frame" x="96" y="446" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0J-cX-fZT">
+                                                <rect key="frame" x="96" y="492" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sp-9n-Nnj">
+                                                <rect key="frame" x="96" y="538" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="Z8b-Wg-qbl" firstAttribute="centerX" secondItem="2qs-fM-oGq" secondAttribute="centerX" id="5IU-Tl-bjE"/>
+                                            <constraint firstItem="qp5-WC-G8W" firstAttribute="top" secondItem="Z8b-Wg-qbl" secondAttribute="bottom" constant="30" id="5f2-K1-Si6"/>
                                             <constraint firstItem="Z8b-Wg-qbl" firstAttribute="top" secondItem="Ddn-YK-VRr" secondAttribute="bottom" constant="30" id="6gf-fQ-0XK"/>
                                             <constraint firstAttribute="height" constant="852" id="9Lj-pG-lCA"/>
                                             <constraint firstItem="RWL-ep-1lP" firstAttribute="top" secondItem="2qs-fM-oGq" secondAttribute="top" constant="10" id="B1S-Jg-vSc"/>
                                             <constraint firstItem="Ddn-YK-VRr" firstAttribute="centerX" secondItem="2qs-fM-oGq" secondAttribute="centerX" id="FfD-S2-set"/>
                                             <constraint firstAttribute="width" constant="393" id="Lbu-wL-sA7"/>
+                                            <constraint firstItem="xgM-xb-HiV" firstAttribute="top" secondItem="qp5-WC-G8W" secondAttribute="bottom" constant="25" id="QLJ-Ke-vxA"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1000" id="jQY-uj-MdI"/>
+                                            <constraint firstItem="Q0J-cX-fZT" firstAttribute="top" secondItem="xgM-xb-HiV" secondAttribute="bottom" constant="25" id="jiy-dC-w4J"/>
                                             <constraint firstItem="RWL-ep-1lP" firstAttribute="centerX" secondItem="2qs-fM-oGq" secondAttribute="centerX" id="tOx-50-nGT"/>
                                             <constraint firstItem="Ddn-YK-VRr" firstAttribute="top" secondItem="RWL-ep-1lP" secondAttribute="bottom" constant="30" id="vYZ-xG-0kd"/>
+                                            <constraint firstItem="9sp-9n-Nnj" firstAttribute="top" secondItem="Q0J-cX-fZT" secondAttribute="bottom" constant="25" id="vqF-TK-JsV"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -96,6 +124,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sYa-BI-Ihm"/>
+                    <connections>
+                        <outlet property="allGameFact" destination="9sp-9n-Nnj" id="DHG-oY-aOG"/>
+                        <outlet property="button1" destination="RWL-ep-1lP" id="EnG-l7-ofi"/>
+                        <outlet property="button2" destination="Ddn-YK-VRr" id="420-0O-Syk"/>
+                        <outlet property="button3" destination="Z8b-Wg-qbl" id="2dB-kD-chg"/>
+                        <outlet property="correctLabel" destination="xgM-xb-HiV" id="cdU-Vh-vco"/>
+                        <outlet property="scoreLabel" destination="qp5-WC-G8W" id="X39-S0-Yte"/>
+                        <outlet property="wrongLabel" destination="Q0J-cX-fZT" id="tEc-Lf-fP9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
