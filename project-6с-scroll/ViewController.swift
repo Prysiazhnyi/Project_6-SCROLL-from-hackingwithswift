@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     @IBOutlet var button1: UIButton!
     @IBOutlet var button2: UIButton!
     @IBOutlet var button3: UIButton!
@@ -49,6 +51,11 @@ class ViewController: UIViewController {
         button3.layer.borderColor =  UIColor.lightGray.cgColor
         countries.shuffle()
         askQuestion(action: nil)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        scrollView.contentSize = CGSize(width: view.frame.width, height: 900) // Высота, чтобы включить все элементы
     }
     
     // Действие при нажатии на кнопку "Назад"
